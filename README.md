@@ -3,7 +3,7 @@
 An overview of the latest Java language tools from Microsoft.
 <!-- Main HTML starts here -->
 
-![\]\(https://raw.githubusercontent.com/ChrisMaunder/intro_vjsharp/master/docs/assets/NewProject.GIF)
+![](https://raw.githubusercontent.com/ChrisMaunder/intro_vjsharp/master/docs/assets/newproject.gif)
 
 ## Introduction
 
@@ -97,7 +97,7 @@ Obviously no introductory article on J# would be complete without HelloWorld.
 The code is very similar to what you would write using either C# or VB.NET,
 though there enough differences to make it clear that this is neither.
 
-```cpp
+```java
 package WindowsApplication1;
 
 import System.Drawing.*;
@@ -109,80 +109,80 @@ import System.Data.*;
 //    Summary description for Form1.
 public class Form1 extends System.Windows.Forms.Form
 {
-private System.Windows.Forms.Button button1;
-//    Required designer variable.
-private System.ComponentModel.Container components = null;
-
-public Form1()
-{
-    //
-    // Required for Windows Form Designer support
-    //
-    InitializeComponent();
-
-    //
-    // TODO: Add any constructor code after InitializeComponent call
-    //
-}
-
-// Clean up any resources being used.
-protected void Dispose(boolean disposing)
-{
-    if (disposing)
+    private System.Windows.Forms.Button button1;
+    //    Required designer variable.
+    private System.ComponentModel.Container components = null;
+    
+    public Form1()
     {
-        if (components != null)
-        {
-            components.Dispose();
-        }
+        //
+        // Required for Windows Form Designer support
+        //
+        InitializeComponent();
+    
+        //
+        // TODO: Add any constructor code after InitializeComponent call
+        //
     }
-    super.Dispose(disposing);
-}
+    
+    // Clean up any resources being used.
+    protected void Dispose(boolean disposing)
+    {
+        if (disposing)
+        {
+            if (components != null)
+            {
+                components.Dispose();
+            }
+        }
+        super.Dispose(disposing);
+    }
 
-    #region Windows Form Designer generated code
-//    Required method for Designer support - do not modify
-//    the contents of this method with the code editor.
-private void InitializeComponent()
-{
-    this.button1 = new System.Windows.Forms.Button();
-    this.SuspendLayout();
-    // 
-    // button1
-    // 
-    this.button1.set_Location(new System.Drawing.Point(((int)96), ((int)32)));
-    this.button1.set_Name("button1");
-    this.button1.set_TabIndex(((int)0));
-    this.button1.set_Text("Click Me!");
-    this.button1.add_Click( new System.EventHandler(this.button1_Click) );
-    // 
-    // Form1
-    // 
-    this.set_AutoScaleBaseSize(new System.Drawing.Size(((int)5), ((int)13)));
-    this.set_ClientSize(new System.Drawing.Size(((int)272), ((int)93)));
-    this.get_Controls().AddRange(new System.Windows.Forms.Control[] {this.button1});
-    this.set_Name("Form1");
-    this.set_Text("HelloWorld");
-    this.ResumeLayout(false);
-
-}
-    #endregion
-
-// The main entry point for the application.
-/** @attribute System.STAThreadAttribute() */
-public static void main(String[] args) 
-{
-    Application.Run(new Form1());
-}
-
-private void button1_Click (System.Object sender, System.EventArgs e)
-{
-    System.Windows.Forms.MessageBox.Show("Hello, World!");
-}
+#region Windows Form Designer generated code
+    //    Required method for Designer support - do not modify
+    //    the contents of this method with the code editor.
+    private void InitializeComponent()
+    {
+        this.button1 = new System.Windows.Forms.Button();
+        this.SuspendLayout();
+        // 
+        // button1
+        // 
+        this.button1.set_Location(new System.Drawing.Point(((int)96), ((int)32)));
+        this.button1.set_Name("button1");
+        this.button1.set_TabIndex(((int)0));
+        this.button1.set_Text("Click Me!");
+        this.button1.add_Click( new System.EventHandler(this.button1_Click) );
+        // 
+        // Form1
+        // 
+        this.set_AutoScaleBaseSize(new System.Drawing.Size(((int)5), ((int)13)));
+        this.set_ClientSize(new System.Drawing.Size(((int)272), ((int)93)));
+        this.get_Controls().AddRange(new System.Windows.Forms.Control[] {this.button1});
+        this.set_Name("Form1");
+        this.set_Text("HelloWorld");
+        this.ResumeLayout(false);
+    
+    }
+#endregion
+    
+    // The main entry point for the application.
+    /** @attribute System.STAThreadAttribute() */
+    public static void main(String[] args) 
+    {
+        Application.Run(new Form1());
+    }
+    
+    private void button1_Click (System.Object sender, System.EventArgs e)
+    {
+        System.Windows.Forms.MessageBox.Show("Hello, World!");
+    }
 }
 ```
 
 ## Visual J# .NET
 
-![\]\(https://raw.githubusercontent.com/ChrisMaunder/intro_vjsharp/master/docs/assets/jsharp.GIF)
+![](https://raw.githubusercontent.com/ChrisMaunder/intro_vjsharp/master/docs/assets/jsharp.gif)
 
 Visual J# .NET has been designed to allow developers to move from Visual J++ 
 to J# as painlessly as possible. The documentation states "The only new syntax 
